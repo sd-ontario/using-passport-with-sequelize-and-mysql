@@ -6,6 +6,8 @@
     var env        = require('dotenv').load()
     var exphbs     = require('express-handlebars')
 
+    
+
 
 
     //For BodyParser
@@ -21,13 +23,14 @@
 
      //For Handlebars
     app.set('views', './app/views')
-    app.engine('hbs', exphbs({extname: '.hbs'}));
+    app.engine('hbs', exphbs({
+        extname: '.hbs',
+       
+    }));
     app.set('view engine', '.hbs');
     
 
-    app.get('/', function(req, res){
-	  res.send('Welcome to Passport with Sequelize');
-	});
+    
 
 
 	//Models

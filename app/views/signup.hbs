@@ -1,13 +1,15 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-</head>
-<body>
-<form id="signup" name="signup" method="post" action="/signup">
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    </head>
+    <body>
+      <form id="signup" name="signup" method="post" action="/signup">
   <label for="email">Email Address</label>
   <input class="text" name="email" type="email" />
+  <label class="text" name="postalcode" type="text">Postal Code</label>
+  <input name="postalcode" type="text">
   <label for="firstname">Firstname</label>
   <input name="firstname" type="text" />
   <label for="lastname">Lastname</label>
@@ -17,5 +19,12 @@
   <input class="btn" type="submit" value="Sign Up" />
 </form>
 
-</body>
+       
+
+    </body>
 </html>
+
+
+
+
+
